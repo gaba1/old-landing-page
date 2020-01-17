@@ -1,0 +1,78 @@
+ 
+
+#navbar,
+.controls,
+ul {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  text-align: center;
+} 
+
+#navbar {
+  width: 100%;
+  margin: 0;
+  max-height: 100%;
+}
+
+.hamburger {
+  display: block;
+  opacity: 1;
+}
+/* Menu hided */
+
+.controls {
+  padding: 3rem;
+  position: relative;
+  top: -50px;
+  right: -100%;
+  display: none; 
+  transition: all .5s ease-in-out;
+}
+
+.sign-up {
+  margin: 0;
+}
+
+ul li {
+  margin-top: 3rem;
+  margin-left: 0;
+}
+
+#logo {
+  text-align: left;
+}
+
+/* To open the menu, add "menu-open" class to ".controls" */
+
+.menu-open {
+  margin-top: 2rem;
+  text-align: center;
+  display: block;
+  right: 0;
+  height: 100vh;
+}
+
+/*  Section About */
+
+#about {
+  height: 100%;
+}
+
+.about-cols {
+  flex-direction: column;
+}
+
+.col {
+  margin-bottom: 30px;
+  height: 90%;
+  width: 100%;
+}
+
+@keyframes showUp {
+  from {
+    transform: translate(500px, 0);
+  } to {
+    opacity: 1;
+  }
+}

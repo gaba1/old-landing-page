@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Example 
+ https://www.wix.com/html5en/hiker-create?utm_source=google&utm_medium=cpc&utm_campaign=656249700^36916457487&experiment_id=%2Bweb%20%2Bpage^b^192236105703^1t1&gclid=CjwKCAjw8-LnBRAyEiwA6eUMGr1aM419u5g-pzBt9_vzbz9VEw5qteH67VhsS86AGnzI2UeXc3pnIxoCTbcQAvD_BwE
+ -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Simple web page</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" type="text/css">
+  <script src="https://use.fontawesome.com/71e42c9de2.js"></script>
+</head>
+
+<body>
+
+  <!--Login -->
+
+  <div class="login-box">
+
+    <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+
+    <form action="index.html" class="login-form" method="post">
+
+      <h1>Welcome</h1>
+      <input type="text" class="txtb" name="" placeholder="Username">
+      <input type="password" class="txtb" name="" placeholder="Password">
+      <input class="login-btn btn" type="submit" name="" value="Login">
+
+    </form>
+
+  </div>
+
+  <!-- Navbar-->
+  <navbar id="navbar">
+      <div id="logo">
+        <a href="#home">
+          <img class="logo"
+            src="img/logo_white.png"
+            alt="">
+        </a>
+      </div>
+    <div class="hamburger">
+        <div class="ham"></div>
+        <div class="ham"></div>
+        <div class="ham"></div>
+    </div>
+    <div class="controls">
+      <div class="control1">
+        <ul class="">
+          <li><a class="btn-tp" href="#home">Home</a></li>
+          <li><a class="btn-tp" href="#about">About</a></li>
+          <li><a class="btn-tp" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="control2">
+        <ul class="">
+          <li class="log-in"><a href="#" class="btn-tp"><i class="fas fa-sign-in-alt"></i>Log In</a></li>
+          <li><a class="btn sign-up" href="#">Sign Up</a></li>
+
+          <li class="log-out">Log Out</li>
+        </ul>
+      </div>
+    </div>
+
+  </navbar>
+
+  <!--  Section Home -->
+
+  <section id="home">
+    <div class="container">
+      <div class="overlay"></div>
+      <div class="quote">
+        <h1>“There are far, far better things ahead than any we leave behind.”</h1>
+        <p>C.S. Lewis</p>
+        <a href="#about" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section About  -->
+
+  <section id="about">
+    <h2 class="about-us"><span>About</span> Us</h2>
+    <div class="about-cols">
+      <div class="col-1 col"><i class="fas fa-headphones"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam.</p>
+      </div>
+      <div class="col-2 col"><i class="fas fa-at"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum consequatur voluptatum atque hic
+          laboriosam distinctio velit a, rerum repellendus! Laboriosam officiis, odio!</p>
+      </div>
+      <div class="col-3 col"><i class="fas fa-pencil-alt"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, assumenda, temporibus. Eius, laudantium, cum?
+          Praesentium in, magni distinctio commodi exercitationem!</p>
+      </div>
+    </div>
+  </section>
+
+  <!--  Section Contact  -->
+
+  <section id="contact">
+    <div class="contact-div">
+
+      <form class="contact-form">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name...">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <input type="text" id="message" placeholder="Enter a message">
+        </div>
+
+        <input class="submit btn" type="button" value="Submit">
+
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <p>Copyright &copy; 2019, NG, All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
